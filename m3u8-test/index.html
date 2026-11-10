@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Herramienta educativa para crear listas M3U con enlaces a videos propios de YouTube.">
+  <title>Creador de listas M3U para YouTube</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#586579; --brand:#2457d6; --line:#d8dfeb; --surface:#fff; --bg:#f4f7fc; --danger:#a42222; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
+    main { width:min(900px, calc(100% - 32px)); margin:40px auto; }
+    header, section { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px; margin-bottom:18px; }
+    h1 { margin:0 0 8px; font-size:clamp(1.6rem,4vw,2.2rem); }
+    h2 { margin:0 0 14px; font-size:1.2rem; }
+    p { margin:8px 0; }
+    .muted { color:var(--muted); }
+    .notice { border-left:4px solid #e6a700; background:#fff8df; padding:12px 14px; border-radius:6px; margin-top:16px; }
+    label { display:block; font-weight:650; margin:14px 0 6px; }
+    input, textarea { width:100%; padding:11px 12px; border:1px solid #aeb9ca; border-radius:8px; color:var(--ink); font:inherit; }
+    textarea { min-height:130px; resize:vertical; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    button { border:0; border-radius:8px; padding:10px 15px; background:var(--brand); color:white; font:inherit; font-weight:650; cursor:pointer; }
+    button.secondary { background:#e9eef8; color:var(--ink); }
+    button.remove { padding:6px 10px; background:#fff0f0; color:var(--danger); }
+    button:focus-visible, input:focus-visible, textarea:focus-visible { outline:3px solid #85a8ff; outline-offset:2px; }
+    #status { min-height:1.5em; margin-top:12px; }
+    #video-list { padding:0; list-style:none; }
+    #video-list li { display:flex; justify-content:space-between; align-items:center; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); }
+    #video-list li:last-child { border-bottom:0; }
+    .video-info { min-width:0; overflow-wrap:anywhere; }
+    .video-info small { display:block; color:var(--muted); }
+    #output { min-height:210px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+    @media (max-width:620px) { main { margin:18px auto; } header,section { padding:18px; } .row { grid-template-columns:1fr; gap:0; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Creador de listas M3U</h1>
+    <p>Organiza enlaces a videos de YouTube creados por tu clase y exporta una lista que puedes probar en un reproductor compatible.</p>
+    <div class="notice"><strong>Nota para la clase:</strong> esta herramienta solo guarda enlaces en una lista M3U; no descarga, convierte ni retransmite videos. Los enlaces <code>youtube.com/watch</code> son páginas de YouTube, no direcciones directas de streaming. Muchos reproductores no reproducen esos enlaces; la compatibilidad depende del reproductor y de YouTube. Usa videos propios o con permiso y sigue las normas de tu escuela.</div>
+  </header>
+
+  <section aria-labelledby="add-heading">
+    <h2 id="add-heading">Añadir un video</h2>
+    <div class="row">
+      <div><label for="title">Título (opcional)</label><input id="title" maxlength="180" placeholder="Ej.: Experimento de ciencias"></div>
+      <div><label for="url">Enlace público de YouTube</label><input id="url" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="url"></div>
+    </div>
+    <div class="buttons"><button id="add-one" type="button">Añadir video</button></div>
+    <label for="bulk">O pega varios enlaces, uno por línea</label>
+    <textarea id="bulk" placeholder="https://youtu.be/VIDEO_ID&#10;Título del proyecto | https://www.youtube.com/watch?v=VIDEO_ID"></textarea>
+    <p class="muted">Para incluir un título en una línea, usa el formato <code>Título | URL</code>.</p>
+    <div class="buttons"><button id="add-bulk" type="button" class="secondary">Añadir enlaces pegados</button></div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <section aria-labelledby="list-heading">
+    <h2 id="list-heading">Videos en la lista (<span id="count">0</span>)</h2>
+    <p id="empty" class="muted">Todavía no has añadido videos.</p>
+    <ul id="video-list"></ul>
+    <div class="buttons"><button id="make-list" type="button">Generar lista M3U</button><button id="download" type="button" class="secondary">Descargar .m3u</button><button id="copy" type="button" class="secondary">Copiar texto</button><button id="clear" type="button" class="secondary">Vaciar lista</button></div>
+  </section>
+
+  <section aria-labelledby="output-heading">
+    <h2 id="output-heading">Contenido de la lista</h2>
+    <label for="output">Puedes revisar o editar el texto antes de descargarlo</label>
+    <textarea id="output" spellcheck="false" aria-describedby="format-help"></textarea>
+    <p id="format-help" class="muted">El archivo se genera en tu navegador; los videos y enlaces no se envían a ningún servidor.</p>
+  </section>
+</main>
+<script>
+(() => {
+  const videos = [];
+  const titleInput = document.querySelector('#title');
+  const urlInput = document.querySelector('#url');
+  const bulkInput = document.querySelector('#bulk');
+  const output = document.querySelector('#output');
+  const status = document.querySelector('#status');
+  const list = document.querySelector('#video-list');
+  const count = document.querySelector('#count');
+  const empty = document.querySelector('#empty');
+
+  function parseYouTubeUrl(raw) {
+    let parsed;
+    try { parsed = new URL(raw.trim()); } catch { return null; }
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+    if (!['youtube.com', 'm.youtube.com', 'music.youtube.com', 'youtu.be'].includes(host)) return null;
+    let id = host === 'youtu.be' ? parsed.pathname.split('/').filter(Boolean)[0] : parsed.searchParams.get('v');
+    if (!id && host !== 'youtu.be') {
+      const match = parsed.pathname.match(/^\/(?:shorts|embed|live)\/([\w-]{11})(?:\/|$)/);
+      if (match) id = match[1];
+    }
+    if (!id || !/^[\w-]{11}$/.test(id)) return null;
+    return `https://www.youtube.com/watch?v=${id}`;
+  }
+
+  function addVideo(title, rawUrl) {
+    const url = parseYouTubeUrl(rawUrl);
+    if (!url) return false;
+    const id = new URL(url).searchParams.get('v');
+    if (videos.some(video => new URL(video.url).searchParams.get('v') === id)) return 'duplicate';
+    videos.push({ title: (title || '').trim().slice(0, 180) || `Video de YouTube (${id})`, url });
+    return true;
+  }
+
+  function render() {
+    list.replaceChildren();
+    videos.forEach((video, index) => {
+      const item = document.createElement('li');
+      const info = document.createElement('span');
+      info.className = 'video-info';
+      const name = document.createElement('strong');
+      name.textContent = video.title;
+      const link = document.createElement('small');
+      link.textContent = video.url;
+      info.append(name, link);
+      const remove = document.createElement('button');
+      remove.type = 'button'; remove.className = 'remove'; remove.textContent = 'Quitar';
+      remove.setAttribute('aria-label', `Quitar ${video.title}`);
+      remove.addEventListener('click', () => { videos.splice(index, 1); render(); });
+      item.append(info, remove); list.append(item);
+    });
+    count.textContent = String(videos.length);
+    empty.hidden = videos.length > 0;
+  }
+
+  function makeM3u() {
+    return ['#EXTM3U', ...videos.flatMap(video => [`#EXTINF:-1,${video.title.replace(/[\r\n]/g, ' ')}`, video.url])].join('\n') + '\n';
+  }
+
+  document.querySelector('#add-one').addEventListener('click', () => {
+    const result = addVideo(titleInput.value, urlInput.value);
+    status.textContent = result === true ? 'Video añadido.' : result === 'duplicate' ? 'Ese video ya está en la lista.' : 'Enlace no válido. Pega una URL de YouTube (watch, youtu.be, shorts, embed o live).';
+    if (result === true) { titleInput.value = ''; urlInput.value = ''; render(); urlInput.focus(); }
+  });
+
+  document.querySelector('#add-bulk').addEventListener('click', () => {
+    let added = 0, duplicates = 0, invalid = 0;
+    bulkInput.value.split(/\r?\n/).map(line => line.trim()).filter(Boolean).forEach(line => {
+      const separator = line.indexOf('|');
+      const title = separator >= 0 ? line.slice(0, separator).trim() : '';
+      const url = separator >= 0 ? line.slice(separator + 1).trim() : line;
+      const result = addVideo(title, url);
+      if (result === true) added++; else if (result === 'duplicate') duplicates++; else invalid++;
+    });
+    render();
+    status.textContent = `Añadidos: ${added}. Duplicados: ${duplicates}. Enlaces no válidos: ${invalid}.`;
+  });
+
+  document.querySelector('#make-list').addEventListener('click', () => {
+    output.value = makeM3u();
+    status.textContent = 'Lista M3U generada.';
+  });
+
+  document.querySelector('#download').addEventListener('click', () => {
+    if (!output.value.trim()) output.value = makeM3u();
+    const blob = new Blob([output.value], { type: 'audio/x-mpegurl;charset=utf-8' });
+    const downloadUrl = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = downloadUrl; anchor.download = 'lista-videos.m3u'; anchor.click();
+    URL.revokeObjectURL(downloadUrl);
+    status.textContent = 'Descarga iniciada: lista-videos.m3u.';
+  });
+
+  document.querySelector('#copy').addEventListener('click', async () => {
+    if (!output.value.trim()) output.value = makeM3u();
+    try { await navigator.clipboard.writeText(output.value); status.textContent = 'Lista copiada al portapapeles.'; }
+    catch { output.focus(); output.select(); status.textContent = 'No se pudo copiar automáticamente. Selecciona y copia el texto.'; }
+  });
+
+  document.querySelector('#clear').addEventListener('click', () => {
+    videos.length = 0; output.value = ''; bulkInput.value = ''; render(); status.textContent = 'Lista vaciada.';
+  });
+  render();
+})();
+</script>
+</body>
+</html>
