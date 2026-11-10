@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acortador sencillo de enlaces con alias personalizados para compartir listas y recursos de clase.">
+  <title>Acortador de enlaces para clase</title>
+  <style>
+    :root { color-scheme:light; --ink:#172033; --muted:#586579; --brand:#2457d6; --line:#d8dfeb; --surface:#fff; --bg:#f4f7fc; --warn:#fff8df; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:40px auto; }
+    header,section { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px; margin-bottom:18px; }
+    h1 { margin:0 0 8px; font-size:clamp(1.6rem,4vw,2.1rem); }
+    h2 { margin:0 0 12px; font-size:1.2rem; }
+    p { margin:8px 0; }
+    .muted { color:var(--muted); }
+    .notice { margin-top:16px; padding:12px 14px; border-left:4px solid #e6a700; border-radius:6px; background:var(--warn); }
+    label { display:block; font-weight:650; margin:15px 0 6px; }
+    input { width:100%; padding:11px 12px; border:1px solid #aeb9ca; border-radius:8px; color:var(--ink); font:inherit; }
+    .alias-row { display:flex; align-items:center; gap:0; }
+    .prefix { padding:11px 10px; background:#edf1f8; border:1px solid #aeb9ca; border-right:0; border-radius:8px 0 0 8px; color:var(--muted); white-space:nowrap; }
+    #alias { border-radius:0 8px 8px 0; }
+    button { border:0; border-radius:8px; padding:10px 15px; background:var(--brand); color:white; font:inherit; font-weight:650; cursor:pointer; }
+    button.secondary { background:#e9eef8; color:var(--ink); }
+    button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid #85a8ff; outline-offset:2px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:10px; margin-top:17px; }
+    #status { min-height:1.5em; margin-top:14px; }
+    #result { margin-top:18px; padding:16px; border:1px solid var(--line); border-radius:10px; background:#f9fbff; }
+    #short-link { display:block; margin:8px 0 12px; font-size:1.15rem; font-weight:700; overflow-wrap:anywhere; }
+    #fallback { margin-top:12px; overflow-wrap:anywhere; }
+    [hidden] { display:none !important; }
+    @media(max-width:600px) { main { margin:18px auto; } header,section { padding:18px; } .prefix { max-width:55%; overflow:hidden; text-overflow:ellipsis; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Acortador de enlaces</h1>
+    <p>Genera un enlace breve para compartir una lista M3U/M3U8, un recurso de clase o cualquier página web. Puedes proponer un alias fácil de recordar.</p>
+    <div class="notice"><strong>Antes de usar:</strong> este sitio estático solicita el acortamiento al servicio externo is.gd. El enlace corto y el destino serán públicos; no pegues información privada, enlaces con claves o datos personales. Comprueba los permisos del contenido que compartes. La disponibilidad del alias depende de que esté libre.</div>
+  </header>
+
+  <section>
+    <form id="shorten-form">
+      <label for="long-url">Enlace original</label>
+      <input id="long-url" name="url" type="url" required inputmode="url" autocomplete="url" placeholder="https://raw.githubusercontent.com/usuario/repositorio/main/lista.m3u8">
+      <label for="alias">Alias personalizado (opcional)</label>
+      <div class="alias-row"><span class="prefix" aria-hidden="true">https://is.gd/</span><input id="alias" name="alias" type="text" maxlength="30" pattern="[A-Za-z0-9-]{1,30}" autocomplete="off" placeholder="lista-clase" aria-describedby="alias-help"></div>
+      <p id="alias-help" class="muted">Usa de 1 a 30 letras, números o guiones. Déjalo vacío para que el servicio genere uno automáticamente.</p>
+      <div class="buttons"><button type="submit">Acortar enlace</button></div>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <div id="result" hidden>
+      <h2>Tu enlace corto</h2>
+      <a id="short-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+      <button id="copy-button" type="button" class="secondary">Copiar enlace</button>
+      <p id="fallback" class="muted" hidden>Si el navegador bloqueó la conexión directa, puedes solicitar el enlace en una pestaña aparte y copiar la respuesta que muestre el servicio: <a id="fallback-link" href="#" target="_blank" rel="noopener noreferrer">Abrir solicitud en is.gd</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo compartir una lista</h2>
+    <p class="muted">Publica primero tu archivo de lista en un lugar accesible, copia su URL raw y pégala arriba. El acortador crea un alias que redirige a esa dirección; no aloja, valida ni modifica el archivo ni convierte enlaces de video.</p>
+  </section>
+</main>
+<script>
+(() => {
+  const form = document.querySelector('#shorten-form');
+  const urlInput = document.querySelector('#long-url');
+  const aliasInput = document.querySelector('#alias');
+  const status = document.querySelector('#status');
+  const result = document.querySelector('#result');
+  const shortLink = document.querySelector('#short-link');
+  const fallback = document.querySelector('#fallback');
+  const fallbackLink = document.querySelector('#fallback-link');
+
+  function buildRequest(longUrl, alias) {
+    const request = new URL('https://is.gd/create.php');
+    request.searchParams.set('format', 'json');
+    request.searchParams.set('url', longUrl);
+    if (alias) request.searchParams.set('shorturl', alias);
+    return request;
+  }
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    result.hidden = true;
+    fallback.hidden = true;
+    status.textContent = '';
+
+    let destination;
+    try { destination = new URL(urlInput.value.trim()); }
+    catch { status.textContent = 'Escribe una URL válida que comience con https:// o http://.'; return; }
+    if (!['http:', 'https:'].includes(destination.protocol)) {
+      status.textContent = 'Solo se aceptan enlaces web http:// o https://.'; return;
+    }
+    const alias = aliasInput.value.trim();
+    if (alias && !/^[A-Za-z0-9-]{1,30}$/.test(alias)) {
+      status.textContent = 'El alias solo puede contener letras, números y guiones (máximo 30 caracteres).'; return;
+    }
+
+    const requestUrl = buildRequest(destination.href, alias);
+    fallbackLink.href = requestUrl.href;
+    status.textContent = 'Solicitando enlace a is.gd…';
+    try {
+      const response = await fetch(requestUrl.href, { method: 'GET', mode: 'cors', credentials: 'omit' });
+      if (!response.ok) throw new Error('El servicio respondió con un error HTTP.');
+      const data = await response.json();
+      if (data.shorturl) {
+        shortLink.href = data.shorturl;
+        shortLink.textContent = data.shorturl;
+        result.hidden = false;
+        status.textContent = 'Enlace creado. Pruébalo antes de compartirlo.';
+      } else {
+        status.textContent = data.errormessage || data.error || 'No se pudo crear el enlace. Comprueba la URL y si el alias está disponible.';
+        fallback.hidden = false;
+      }
+    } catch (error) {
+      status.textContent = 'No se pudo leer la respuesta del servicio desde este navegador. Prueba la solicitud en una pestaña aparte.';
+      fallback.hidden = false;
+    }
+  });
+
+  document.querySelector('#copy-button').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(shortLink.href);
+      status.textContent = 'Enlace copiado al portapapeles.';
+    } catch {
+      const selection = document.createRange();
+      selection.selectNodeContents(shortLink);
+      const currentSelection = window.getSelection();
+      currentSelection.removeAllRanges(); currentSelection.addRange(selection);
+      status.textContent = 'No se pudo copiar automáticamente. Selecciona el enlace y cópialo.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
