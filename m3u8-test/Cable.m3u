@@ -1,0 +1,364 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/bitme-mx.png" group-title="Cine y Series",BITME
+http://181.78.8.199:8000/play/a0ga/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-canal-ar.png" group-title="Cine y Series",CINE CANAL 
+http://181.78.8.199:8000/play/a0kb/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE FAMILIAR
+http://181.78.8.199:8000/play/a09p/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE HISPANO
+http://181.78.8.199:8000/play/a09n/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE INFANTIL
+http://181.78.8.199:8000/play/a09o/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE MEXICANO
+http://181.78.8.199:8000/play/a0e1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE MEXICANO ENVIADO
+http://181.78.8.199:8000/play/a07z/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-ar-ar.png" group-title="Cine y Series",CINE PREMIUN
+http://181.78.8.199:8000/play/a09q/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cine-canal-ar.png" group-title="Cine y Series",Cinecanal HD
+http://181.78.8.199:8000/play/a094/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/de-pelicula-clasico-mx.png" group-title="Cine y Series",DEPELICULA
+http://181.78.8.199:8000/play/a0au/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/de-pelicula-clasico-mx.png" group-title="Cine y Series",DEPELICULAS SRT
+http://181.78.8.199:8000/play/a0e0/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=130" group-title="Cine y Series",DHE HD
+http://181.78.8.199:8000/play/a086/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/distrito-comedia-mx.png" group-title="Cine y Series",DISTRITO COMEDIA
+http://181.78.8.199:8000/play/a0g8/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/e-entertainment-au.png" group-title="Cine y Series",ENTERTEIMENT (PRINCIPAL)
+http://181.78.8.199:8000/play/a0ks/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/e-entertainment-au.png" group-title="Cine y Series",ENTRETEIMENT
+http://181.78.8.199:8000/play/a0ac/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/e-entertainment-au.png" group-title="Cine y Series",Entreteiment
+http://181.78.8.199:8000/play/a0cm/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/fx-ar.png" group-title="Cine y Series",FX
+http://181.78.8.199:8000/play/a0ds/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/golden-edge-mx.png" group-title="Cine y Series",GOLDEN (PRINCIPAL)
+http://181.78.8.199:8000/play/a0km/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/golden-edge-mx.png" group-title="Cine y Series",GOLDEN EDGE
+http://181.78.8.199:8000/play/a0ab/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/golden-edge-mx.png" group-title="Cine y Series",Goldenedge
+http://181.78.8.199:8000/play/a0ck/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=181" group-title="Cine y Series",IVC
+http://181.78.8.199:8000/play/a0cs/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/romania/kanal-d-ro.png" group-title="Cine y Series",Kanal D Drama HD
+http://181.78.8.199:8000/play/a083/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/romania/kanal-d-ro.png" group-title="Cine y Series",KanalDrama
+http://181.78.8.199:8000/play/a0c6/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/lifetime-ar.png" group-title="Cine y Series",LIFETIME INTERNO
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=4625" group-title="Cine y Series",OLE 2.2
+http://181.78.8.199:8000/play/a0af/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=4696" group-title="Cine y Series",PANICO
+http://181.78.8.199:8000/play/a0bt/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/paramount-network-ar.png" group-title="Cine y Series",PARAMOUNT HD PARA TRANSCODIFICAR
+http://181.78.8.199:8000/play/a06u/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/paramount-network-ar.png" group-title="Cine y Series",PARAMOUNT TRANSCODIFICADO
+http://181.78.8.199:8000/play/a0c8/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=759" group-title="Cine y Series",RCN NOVELAS
+http://181.78.8.199:8000/play/a0a7/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/sony-channel-ar.png" group-title="Cine y Series",SONY MOVIES
+http://181.78.8.199:8000/play/a0e7/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/sony-channel-ar.png" group-title="Cine y Series",SONY MOVIES 2
+http://181.78.8.199:8000/play/a0ap/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/space-ar.png" group-title="Cine y Series",SPACE SRT EN
+http://181.78.8.199:8000/play/a096/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/star-channel-ar.png" group-title="Cine y Series",STARCHANNEL
+http://181.78.8.199:8000/play/a0i9/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/star-channel-ar.png" group-title="Cine y Series",STARCHANNEL NUEVO
+http://181.78.8.199:8000/play/a0kd/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/studio-universal-ar.png" group-title="Cine y Series",Studiouniversal
+http://181.78.8.199:8000/play/a0cf/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/syfy-ar.png" group-title="Cine y Series",SYFY (USA TRANSCODIFICADO)
+http://181.78.8.199:8000/play/a0cl/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/syfy-ar.png" group-title="Cine y Series",SYFY (USA)
+http://181.78.8.199:8000/play/a09x/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tcm-ar.png" group-title="Cine y Series",TCM
+http://181.78.8.199:8000/play/a0du/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/belgium/tele-mb-be.png" group-title="Cine y Series",TELENOSTALGIA ENVIADO
+http://181.78.8.199:8000/play/a07t/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/belgium/tele-mb-be.png" group-title="Cine y Series",TELENOSTALGIA HD
+http://181.78.8.199:8000/play/a0fz/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/belgium/tele-mb-be.png" group-title="Cine y Series",TELENOVELAS
+http://181.78.8.199:8000/play/a0ar/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/belgium/tele-mb-be.png" group-title="Cine y Series",TELENOVELAS (PRINCIPAL)
+http://181.78.8.199:8000/play/a0k8/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/las-estrellas-2-horas-mx.png" group-title="Cine y Series",TELEVISA 1
+http://181.78.8.199:8000/play/a0ak/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/las-estrellas-2-horas-mx.png" group-title="Cine y Series",TELEVISA CON ENTRETEIMENT
+http://181.78.8.199:8000/play/a0av/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/las-estrellas-2-horas-mx.png" group-title="Cine y Series",TELEVISA DE 3 CANALES
+http://181.78.8.199:8000/play/a0at/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/world-latin-america/tnt-novelas-lam.png" group-title="Cine y Series",TNT NOVELAS
+http://181.78.8.199:8000/play/a0bq/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/world-latin-america/tnt-novelas-lam.png" group-title="Cine y Series",TNT Novelas HD
+http://181.78.8.199:8000/play/a09h/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tnt-series-ar.png" group-title="Cine y Series",TNT SERIES SRT EN
+http://181.78.8.199:8000/play/a098/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tnt-ar.png" group-title="Cine y Series",TNT SRT EN
+http://181.78.8.199:8000/play/a097/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/universal-tv-ar.png" group-title="Cine y Series",UNIVERSAL
+http://181.78.8.199:8000/play/a09t/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/universal-tv-ar.png" group-title="Cine y Series",UNIVERSAL STUDIO
+http://181.78.8.199:8000/play/a09w/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 1
+http://181.78.8.199:8000/play/a0b1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 1 NUEVO
+http://181.78.8.199:8000/play/a0k9/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 2
+http://181.78.8.199:8000/play/a0b2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/espn-2-hd-au.png" group-title="Deportes",ESPN 2 HD
+http://181.78.8.199:8000/play/a08z/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 2 NUEVO
+http://181.78.8.199:8000/play/a0ka/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-3-ar.png" group-title="Deportes",ESPN 3
+http://181.78.8.199:8000/play/a0b3/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 3 HD
+http://181.78.8.199:8000/play/a07f/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 3 NUEVO
+http://181.78.8.199:8000/play/a0ke/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/brazil/espn-4-br.png" group-title="Deportes",ESPN 4
+http://181.78.8.199:8000/play/a0do/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 4 NUEVO
+http://181.78.8.199:8000/play/a0kf/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 4HD
+http://181.78.8.199:8000/play/a09b/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 5 NUEVO
+http://181.78.8.199:8000/play/a0kg/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 5HD
+http://181.78.8.199:8000/play/a08n/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 6 NUEVO
+http://181.78.8.199:8000/play/a0kh/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 6HD
+http://181.78.8.199:8000/play/a07g/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 7 NUEVO
+http://181.78.8.199:8000/play/a0ki/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN 7HD
+http://181.78.8.199:8000/play/a08o/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/espn-hd-au.png" group-title="Deportes",ESPN HD
+http://181.78.8.199:8000/play/a08y/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN5
+http://181.78.8.199:8000/play/a0bv/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN6
+http://181.78.8.199:8000/play/a0bw/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/espn-2-ar.png" group-title="Deportes",ESPN7
+http://181.78.8.199:8000/play/a0bx/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/TEKKADANES/streaming/main/m3u8-test/Logos/canal.png" group-title="Deportes",MERIDIANO
+http://181.78.8.199:8000/play/a0fr/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/animal-planet-ar.png" group-title="Documentales",ANIMAL PLANET
+http://181.78.8.199:8000/play/a0by/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/animal-planet-ar.png" group-title="Documentales",Animal Planet HD AMAZONAS
+http://181.78.8.199:8000/play/a06w/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-channel-ar.png" group-title="Documentales",DISCOVERY CHANNEL
+http://181.78.8.199:8000/play/a0c4/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-channel-ar.png" group-title="Documentales",Discovery H&H HD
+http://181.78.8.199:8000/play/a071/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-channel-ar.png" group-title="Documentales",Discovery HD
+http://181.78.8.199:8000/play/a09a/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-channel-ar.png" group-title="Documentales",DISCOVERY ID
+http://181.78.8.199:8000/play/a0c5/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-channel-ar.png" group-title="Documentales",Discoveryhh
+http://181.78.8.199:8000/play/a0c2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/new-zealand/edge-nz.png" group-title="Documentales",EDGE (PRINCIPAL)
+http://181.78.8.199:8000/play/a0k2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/food-network-ar.png" group-title="Documentales",FOOD NETWORK
+http://181.78.8.199:8000/play/a0hu/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/hgtv-ar.png" group-title="Documentales",HGTV
+http://181.78.8.199:8000/play/a0je/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/history-channel-2-ar.png" group-title="Documentales",History
+http://181.78.8.199:8000/play/a0cq/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/history-channel-2-ar.png" group-title="Documentales",HISTORY
+http://181.78.8.199:8000/play/a0ag/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/id-investigation-discovery-ar.png" group-title="Documentales",ID HD
+http://181.78.8.199:8000/play/a07j/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/nat-geo-kids-ar.png" group-title="Documentales",Nat Geo HD
+http://181.78.8.199:8000/play/a093/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/national-geographic-ar.png" group-title="Documentales",NatGEO
+http://181.78.8.199:8000/play/a0c7/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/national-geographic-ar.png" group-title="Documentales",NatGEO 2
+http://181.78.8.199:8000/play/a0kc/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/poland/sci-fi-pl.png" group-title="Documentales",SCI
+http://181.78.8.199:8000/play/a0hv/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tlc-ar.png" group-title="Documentales",TLC
+http://181.78.8.199:8000/play/a0ch/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tlc-ar.png" group-title="Documentales",TLC (2)
+http://181.78.8.199:8000/play/a0a3/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=154" group-title="Documentales",TURBO
+http://181.78.8.199:8000/play/a0a5/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=154" group-title="Documentales",TURBO
+http://181.78.8.199:8000/play/a0ci/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=979" group-title="Documentales",TV AGRO
+http://181.78.8.199:8000/play/a0e5/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/albania/tv-klan-al.png" group-title="Documentales",TV AGRO HD
+http://181.78.8.199:8000/play/a0fj/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/baby-tv-ar.png" group-title="Infantil",BABY TV 
+http://181.78.8.199:8000/play/a08d/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cartoon-network-ar.png" group-title="Infantil",CARTOON NETWORK ENVIADO
+http://181.78.8.199:8000/play/a095/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/brazil/cartoonito-br.png" group-title="Infantil",CARTOONITO ENVIADO
+http://181.78.8.199:8000/play/a09f/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-kids-ar.png" group-title="Infantil",Discovery Kids HD
+http://181.78.8.199:8000/play/a070/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/discovery-kids-ar.png" group-title="Infantil",Discoverykids
+http://181.78.8.199:8000/play/a0c3/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/disney-channel-ar.png" group-title="Infantil",DISNEY CHANNEL ENVIADO
+http://181.78.8.199:8000/play/a0dn/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/disney-jr-ar.png" group-title="Infantil",DISNEY JR ENVIADO
+http://181.78.8.199:8000/play/a084/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/nick-jr-ar.png" group-title="Infantil",EQUIPO DE NICK
+http://181.78.8.199:8000/play/a0i1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/australia/adult-swim-au.png" group-title="Infantil",IVC (ADULTSWIM)
+http://181.78.8.199:8000/play/a0ah/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/chkybmzX/Janimotion.png" group-title="Infantil",Janimotion
+https://janimotion.com/hls/janimotion/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/nick-jr-ar.png" group-title="Infantil",NICK 
+http://181.78.8.199:8000/play/a0i2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/india/nick-hd-plus-in.png" group-title="Infantil",Nick HD
+http://181.78.8.199:8000/play/a07l/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/nick-jr-ar.png" group-title="Infantil",NICK JR TRANSCODIFICAR
+http://181.78.8.199:8000/play/a0i5/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/nick-jr-ar.png" group-title="Infantil",NICKJR
+http://181.78.8.199:8000/play/a0a0/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/tooncast-ar.png" group-title="Infantil",TOONCAST ENVIADO
+http://181.78.8.199:8000/play/a09g/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/bandamax-mx.png" group-title="Musica",BANDAMAX
+http://181.78.8.199:8000/play/a0g9/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/htv-ar.png" group-title="Musica",HTV SRT EN
+http://181.78.8.199:8000/play/a081/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/mtv-00s-ar.png" group-title="Musica",MTV
+http://181.78.8.199:8000/play/a0ad/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/mtv-00s-ar.png" group-title="Musica",MTV PARA TRANSCODIFICAR
+http://181.78.8.199:8000/play/a0i4/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/spain/musica-por-movistar-plus-es.png" group-title="Musica",MUSICA HITS
+http://181.78.8.199:8000/play/a09u/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/spain/musica-por-movistar-plus-es.png" group-title="Musica",MUSICA POPULAR
+http://181.78.8.199:8000/play/a09v/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/spain/musica-por-movistar-plus-es.png" group-title="Musica",MUSICA REGUETON
+http://181.78.8.199:8000/play/a09r/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/spain/musica-por-movistar-plus-es.png" group-title="Musica",MUSICA SALSA
+http://181.78.8.199:8000/play/a09z/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=8245" group-title="Musica",RUMBA TV
+http://181.78.8.199:8000/play/a0ec/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=8245" group-title="Musica",RUMBA TV
+http://181.78.8.199:8000/play/a0fy/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/telehit-musica-mx.png" group-title="Musica",TELEHIT MUSICA
+http://181.78.8.199:8000/play/a0g7/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/indonesia/antv-id.png" group-title="Nacionales / Abierta",ANTV
+http://181.78.8.199:8000/play/a0fo/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL 1 NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0cz/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL 12 VALLEDUPAR
+http://181.78.8.199:8000/play/a0e4/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL 13 NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d4/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL CAPITAL NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d3/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL CONGRE NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL DE LAS ESTRELLAS
+http://181.78.8.199:8000/play/a0as/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/canal-10-ar.png" group-title="Nacionales / Abierta",CANAL I
+http://181.78.8.199:8000/play/a0jk/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",CANALES NACIONALES
+http://181.78.8.199:8000/play/a0cy/index.m3u8
+#EXTINF:-1 group-title="Nacionales / Abierta",CANALINSTITUCIONAL NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d0/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=308" group-title="Nacionales / Abierta",CARACOL
+http://181.78.8.199:8000/play/a0b0/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=308" group-title="Nacionales / Abierta",CARACOL 1
+http://181.78.8.199:8000/play/a0jz/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=308" group-title="Nacionales / Abierta",CARACOL 2 DIRECTO PARA SENCORE
+http://181.78.8.199:8000/play/a0hw/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=308" group-title="Nacionales / Abierta",CARACOL LOCAL
+http://181.78.8.199:8000/play/a08s/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=308" group-title="Nacionales / Abierta",CARACOL SRT
+http://181.78.8.199:8000/play/a0aw/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/bulgaria/city-tv-bg.png" group-title="Nacionales / Abierta",CITY ENVIADO
+http://181.78.8.199:8000/play/a087/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/bulgaria/city-tv-bg.png" group-title="Nacionales / Abierta",CITY ENVIADO ENVIAR
+http://181.78.8.199:8000/play/a0eg/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",COLOMBEIA
+http://181.78.8.199:8000/play/a0fn/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",CONCIENCIA
+http://181.78.8.199:8000/play/a0fq/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/las-estrellas-2-horas-mx.png" group-title="Nacionales / Abierta",LAS ESTRELLAS
+http://181.78.8.199:8000/play/a0cx/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/mexico/las-estrellas-2-horas-mx.png" group-title="Nacionales / Abierta",LAS ESTRELLAS
+http://181.78.8.199:8000/play/a0kj/index.m3u8
+#EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/52/2/ntn24-nuestra-tele-noticias-logo-png_seeklogo-521920.png" group-title="Nacionales / Abierta",NUESTRA TELE
+http://181.78.8.199:8000/play/a0a8/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=5427" group-title="Nacionales / Abierta",RCN
+http://181.78.8.199:8000/play/a0az/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=5427" group-title="Nacionales / Abierta",RCN (PRINCIPALES)
+http://181.78.8.199:8000/play/a0jy/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=5427" group-title="Nacionales / Abierta",RCN LOCAL
+http://181.78.8.199:8000/play/a09l/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/TEKKADANES/streaming/main/m3u8-test/Logos/canal.png" group-title="Nacionales / Abierta",SEÑAL COLOMBIA NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d1/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEANTIOQUIA NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d5/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELECAFE NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d8/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELECARIBE NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d6/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEISLAS
+http://181.78.8.199:8000/play/a0dx/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEMETRO
+http://181.78.8.199:8000/play/a0ii/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/telemundo-international-ar.png" group-title="Nacionales / Abierta",TELEMUNDO
+http://181.78.8.199:8000/play/a0kz/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEPACIFICO NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d7/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEVEN
+http://181.78.8.199:8000/play/a09j/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TELEVEN TRANSCODIFICADO
+http://181.78.8.199:8000/play/a0cd/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TLT
+http://181.78.8.199:8000/play/a0fs/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TRO NACIONAL SIN TRANS
+http://181.78.8.199:8000/play/a0d9/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=3086" group-title="Nacionales / Abierta",TVES
+http://181.78.8.199:8000/play/a0ft/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Nacionales / Abierta",TVFANB
+http://181.78.8.199:8000/play/a0fp/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/univision-us.png" group-title="Nacionales / Abierta",UNIVISION
+http://181.78.8.199:8000/play/a0er/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/univision-us.png" group-title="Nacionales / Abierta",UNIVISION (2)
+http://181.78.8.199:8000/play/a0e2/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Noticias",CABLE NOTICIAS
+http://181.78.8.199:8000/play/a0g3/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Noticias",CABLE NOTICIAS (2)
+http://181.78.8.199:8000/play/a0e8/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cnn-en-espanol-ar.png" group-title="Noticias",CNN
+http://181.78.8.199:8000/play/a0dt/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cnn-en-espanol-ar.png" group-title="Noticias",CNN ENVIADO
+http://181.78.8.199:8000/play/a08a/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cnn-en-espanol-ar.png" group-title="Noticias",CNN INTERNACIONAL SRT
+http://181.78.8.199:8000/play/a0jg/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/cnn-en-espanol-ar.png" group-title="Noticias",CNN SRT
+http://181.78.8.199:8000/play/a0jf/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Noticias",GLOBOVISION
+http://181.78.8.199:8000/play/a09k/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Noticias",GLOBOVISION TRANSCODIFICADO
+http://181.78.8.199:8000/play/a0co/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/ukraine/ntn-ua.png" group-title="Noticias",NTN 24
+http://181.78.8.199:8000/play/a0a6/index.m3u8
+#EXTINF:-1 tvg-logo="https://m3ukodi.com/site/logos_searchs/logo_serve.php?id=668" group-title="Noticias",TELESUR
+http://181.78.8.199:8000/play/a0fm/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Otros",EL MUNDO EL CAMPO
+http://181.78.8.199:8000/play/a0hb/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Otros",ENCODER DE 8P
+http://181.78.8.199:8000/play/a09s/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Otros",ENCODER DE 8P 2
+http://181.78.8.199:8000/play/a0ht/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Otros",NSTV
+http://181.78.8.199:8000/play/a0i6/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Religion",CRISTOVISION
+http://181.78.8.199:8000/play/a0dr/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/international/enlace-int.png" group-title="Religion",ENLACE
+http://181.78.8.199:8000/play/a0dq/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/argentina/ewtn-ar.png" group-title="Religion",EWTN
+http://181.78.8.199:8000/play/a0ee/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Religion",TELEAMIGA
+http://181.78.8.199:8000/play/a0dv/index.m3u8
+#EXTINF:-1 tvg-logo="http://logo.png" group-title="Religion",TELEAMIGA ENVIADO
+http://181.78.8.199:8000/play/a08b/index.m3u8
